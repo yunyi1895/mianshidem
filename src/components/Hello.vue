@@ -1,6 +1,8 @@
 <template>
-  <div class="hello">
-    <h1>摩拜:推出轻骑版单车Lite共享单车进入融合之战了么？</h1>
+	<ul>
+		<li>
+	<div class="hello">
+    <h1 class="tit">摩拜:推出轻骑版单车Lite共享单车进入融合之战了么？</h1>
    	<div class="content">
    		<div class="flex_2">
    			<div class="author">
@@ -21,11 +23,13 @@
 					 
    			</div>
    			<div class="showimg">
-   				showimg
+					 <img src="../assets/logo.png">
    			</div>
    		</div>
    	</div>
   </div>
+	</li>
+</ul>
 </template>
 
 <script>
@@ -33,11 +37,22 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      page:1,
+			showloding:false,
+			msg:[]
     }
   },
-  methods(){
-  	
+  methods:{
+  	getdate:function(){
+				this.$http({
+	                method:'GET',
+	                url:'http://36kr.com/feed',
+	               }).then(function(data){
+									 	console.log(data)
+		
+	              })
+		}
+
   },
   ready(){
   	
@@ -52,6 +67,11 @@ export default {
 .hello{
 	margin: 0 0.1rem;
 	
+}
+
+.tit{
+		letter-spacing: 2px;
+		color:#808080;
 }
 .content{
 	display: flex;
@@ -93,6 +113,24 @@ export default {
 		text-overflow: ellipsis;
 		line-height:25px;
 	}
+.showtime{
+		margin:10px 8px;
+		display:inline-block;
+		padding:3px;
+		background:#ccc;
+		border-radius:3px;
+		color:#fff;
+		width:100px;
+		text-align:center;
+		margin-left:0;
+}
+.showimg{
+
+}
+.showimg img{
+	height:100px;
+	width:100px;
+}
 a {
   color: #42b983;
 }
