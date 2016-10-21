@@ -1,24 +1,51 @@
 <template>
 	<ul>
-		<li>
+		<li v-for="j in showmsg" @click="tolink(j.link)">
 	<div class="hello">
-    <h1 class="tit">摩拜:推出轻骑版单车Lite共享单车进入融合之战了么？</h1>
+		
+    <h1 class="tit">{{j.title}}</h1>
    	<div class="content">
    		<div class="flex_2">
    			<div class="author">
-					 <span class="name">陈明峰</span>
-					 <span class="spking">投资人说</span>
+					 <span class="name">{{j.author|zqw}}</span>
+					 <span class="spking">{{j.category|zqw}}</span>
    			</div>
    			<div class="article">
-   				EverNote（印象笔记）是在2012年正式推出的免费应用程序，它能在各种终端设备上创建笔记。EverNote不仅具备强大的笔记捕捉功能，还采用了独特的分类方式，而
-					 EverNote（印象笔记）是在2012年正式推出的免费应用程序，它能在各种终端设备上创建笔记。EverNote不仅具备强大的笔记捕捉功能，还采用了独特的分类方式，而...
-					EverNote（印象笔记）是在2012年正式推出的免费应用程序，它能在各种终端设备上创建笔记。EverNote不仅具备强大的笔记捕捉功能，还采用了独特的分类方式，而...
+			
+		
+			这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			
+			
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+ 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 	 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+ 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 	 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+ 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
    			</div>
    		</div>
    		<div class="flex_1">
    			<div class="showtime">
 					 <div class="time">
-							showtime
+							{{j.pubDate|zqw}}
 					 </div>
 					 
    			</div>
@@ -29,33 +56,70 @@
    	</div>
   </div>
 	</li>
+	<li v-show="showloding" id="loding">加载。。。</li>
 </ul>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  
   data () {
+	 
     return {
       page:1,
-			showloding:false,
-			msg:[]
+		
+		msg:[],
+		showmsg:[],
+		showloding:false,
+		page:1
     }
   },
   methods:{
   	getdate:function(){
-				this.$http({
+		  var vm=this
+			this.$http({
 	                method:'GET',
-	                url:'http://36kr.com/feed',
+	                url:'http://localhost:8081/get',
 	               }).then(function(data){
-									 	console.log(data)
-		
+						
+					var msg=data.body.rss.channel[0].item
+					
+						vm.msg=[...msg]
+						vm.setmsg(1)
+						console.log(JSON.stringify(msg[0]))
 	              })
+		},
+		setmsg:function(n){
+			this.showloding=false
+			if(n*10>this.msg.length) return
+			var s=this.msg.splice(0,n*10)
+			this.showmsg=s	
+		},
+		tolink:function(n){
+		//	alert(n)
+				window.location.href=n
+			//this.$router.go({path:n})
 		}
 
   },
-  ready(){
-  	
+  mounted(){//代替 ready
+		var vm=this
+				$(document).scroll(function(){
+				var bheight = $(window).height();//浏览器当前窗口可视区域高度
+				var sheight = $("body")[0].scrollHeight;//获取滚动条高度，[0]是为了把jq对象转化为js对象
+				var stop = $("body").scrollTop();//滚动条距离顶部的距离
+				
+				if(stop>=sheight-bheight){//当滚动条到顶部的距离等于滚动条高度减去窗口高度时
+					vm.showloding=true
+					vm.page++
+					setTimeout(function(){
+						vm.setmsg(vm.page)
+					},500)
+					
+				}
+			});
+	
+  	this.getdate()
   }
   
 }
@@ -75,7 +139,7 @@ export default {
 }
 .content{
 	display: flex;
-	
+	width:100%;
 }
 .flex_1{
 	flex:1;
@@ -112,6 +176,8 @@ export default {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		line-height:25px;
+		width:100%;
+	
 	}
 .showtime{
 		margin:10px 8px;
@@ -134,4 +200,11 @@ export default {
 a {
   color: #42b983;
 }
+	#loding{
+		height:30px;
+		width:100%;
+		line-height:30px;
+		color:#808080;
+		text-align:center;
+	}
 </style>
