@@ -44,7 +44,8 @@ export default {
 		msg:[],
 		showmsg:[],
 		showloding:false,
-		page:1
+		page:1,
+		ispage:true
     }
   },
   methods:{
@@ -63,12 +64,18 @@ export default {
 	              })
 		},
 		setmsg:function(n){
+			var vm=this
 			this.showloding=false
 			console.log(n)
+			console.log(this.msg.length)
 			if(n*10>this.msg.length) return
-			var s=this.msg.splice(0,n*10)
+			var s=this.msg.slice(0,n*10)
 			this.showmsg=s
 			this.page++
+			setTimeout(function(){
+						
+					vm.ispage=true
+					},100)
 		},
 		tolink:function(n){
 		//	alert(n)
@@ -84,9 +91,9 @@ export default {
 				var sheight = $("body")[0].scrollHeight;//获取滚动条高度，[0]是为了把jq对象转化为js对象
 				var stop = $("body").scrollTop();//滚动条距离顶部的距离
 				
-				if(stop>=sheight-bheight){//当滚动条到顶部的距离等于滚动条高度减去窗口高度时
+				if(stop>=sheight-bheight && vm.ispage){//当滚动条到顶部的距离等于滚动条高度减去窗口高度时
 					vm.showloding=true
-					
+					vm.ispage=false
 					setTimeout(function(){
 						
 						vm.setmsg(vm.page)
