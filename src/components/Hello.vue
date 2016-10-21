@@ -3,28 +3,18 @@
 		<li v-for="j in showmsg" @click="tolink(j.link)">
 	<div class="hello">
 		
-    <h1 class="tit">{{j.title}}</h1>
+    <h1 class="tit">{{j.title|zqwqw}}</h1>
    	<div class="content">
    		<div class="flex_2">
    			<div class="author">
-					 <span class="name">{{j.author|zqw}}</span>
-					 <span class="spking">{{j.category|zqw}}</span>
+					 <span class="name">{{j.author|zqwqw}}</span>
+					 <span class="spking">{{j.category|zqwqw}}</span>
    			</div>
    			<div class="article">
 			
-		
-			这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+				   {{j.description|zqw}}
 			
-			
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
- 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 	 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 <!--这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下	 	 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
@@ -32,14 +22,17 @@
  这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 	 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+
+
+
+			 	 	 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
  这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
 			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
-			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下
+			 这篇文章主要介绍了JavaScript将XML转成JSON的方法,实例分析了javascript操作XML文件及格式转化的技巧,具有一定参考借鉴价值,需要的朋友可以参考下-->
    			</div>
    		</div>
    		<div class="flex_1">
