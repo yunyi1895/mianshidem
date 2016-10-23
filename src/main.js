@@ -9,11 +9,11 @@ Vue.use(VueResource)
 Vue.use(VueRouter)
 
 const router = new VueRouter()
-
+router.start(App,'#app')
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  template: '<App/>',
-  components: { App }
-})
+// new Vue({
+//   el: '#app',
+//   template: '<App/>',
+//   components: { App }
+// })

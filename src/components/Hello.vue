@@ -1,9 +1,9 @@
 <template>
+	<div>
 	<ul class="showul">
-		<li v-for="j in showmsg" @click="tolink(j.link)">
+		<li v-for="j in showmsg" @click="tolink(j.link)"><!-- 先不用touchend-->
 	<div class="hello">
-		
-    <h1 class="tit">{{j.title|zqwqw}}</h1>
+	<h1 class="tit">{{j.title|zqwqw}}</h1>
    	<div class="content">
    		<div class="flex_2">
    			<div class="author">
@@ -31,16 +31,14 @@
 	</li>
 	<li v-show="showloding" id="loding">加载。。。</li>
 </ul>
+<div>
 </template>
 
 <script>
 export default {
-  
-  data () {
-	 
-    return {
-      page:1,
-		
+   data () {
+	 return {
+     	page:1,
 		msg:[],
 		showmsg:[],
 		showloding:false,
@@ -78,29 +76,31 @@ export default {
 					},100)
 		},
 		tolink:function(n){
-		//	alert(n)
+		
 				window.location.href=n
-			//this.$router.go({path:n})
+			
 		}
 
   },
-  mounted(){//代替 ready
+  ready(){//代替 ready
 		var vm=this
-				$(document).scroll(function(){
-				var bheight = $(window).height();//浏览器当前窗口可视区域高度
-				var sheight = $("body")[0].scrollHeight;//获取滚动条高度，[0]是为了把jq对象转化为js对象
-				var stop = $("body").scrollTop();//滚动条距离顶部的距离
+			window.onscroll=function(){ //js监听滚动条滚动事件
+				var bheight = document.documentElement.clientHeight;//浏览器当前窗口可视区域高度
+				var sheight =document.body.scrollHeight;//获取滚动条高度
+				var stop =window.pageYOffset;//滚动条距离顶部的距离
 				
 				if(stop>=sheight-bheight && vm.ispage){//当滚动条到顶部的距离等于滚动条高度减去窗口高度时
 					vm.showloding=true
 					vm.ispage=false
 					setTimeout(function(){
-						
 						vm.setmsg(vm.page)
 					},500)
 					
 				}
-			});
+
+		}
+
+			
 	
   	this.getdate()
   }
